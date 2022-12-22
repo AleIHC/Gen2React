@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1</title>
+    <script>
+        //comentario 
+        /*mas de un alinea de comentario  
+        */
+        console.log("hola mundo!!")
+        console.log("que tal");
+        console.log("ya tengo hambre");
+
+        var nombre = "Mijail";
+        var apellido ="Palma";
+        var edad = 42;
+        var direccion;//null -> undefined
+
+        console.log("⎡********************⎤");
+        console.log("⎢Nombre :    ", nombre, "⎢" );
+        console.log("⎢Apellido:    "+ apellido + "⎢" );
+        console.log("⎢Edad :          ", edad, "⎢" );
+        console.log("⎢direccion :          ", direccion, "⎢" );
+        console.log("⎣*******************⎦");
+
+        /*Variables*/
+
+        // Espacio de memoria que puede cambiar en el tiempo
+        // tipos de variables:String, number, boolean, null
+        // el tipo de variable, era definido por su contenido (typeof )
+        // el nombre de la variable DEBE ser significativo.
+        
+        //no hacer
+        /*
+        var aRdRFTvY -> no, es muy pegriloso
+        var la casa -> no agregar espacio 
+        */
+        
+        /*Hacer
+        var laCasa
+        var la_casa
+        var LaCasa
+        var LA_CASA -> CONSTANTES
+
+        
+        */
+        // DEPENDERA DEL CONTEXTO
+        var numero_uno = 1;
+        var numUno = 1;
+        var numero1 = 1;
+        var numero_1 =1;
+        var number_uno = 1;
+
+        var string_uno = "uno";
+        var unoString = "uno";
+        var string1= "uno";
+        var palabra_uno= "uno";
+        var palabra_numero_1 = "uno";
+
+        var soloParaElCalculoDelIVA = 123.4;
+        var SOLO_PARA_EL_CALCULO_DEL_IVA = 19;
+
+        /*Operatoria de variables*/
+
+        var num_1=24;
+        var num_2= 35;
+        var num_3 = 11;
+        /*INI 20221017 - iapq- se agrega una nueva variable*/
+        var num_4 = 55;
+        /*FIN 20221017 - iapq- se agrega una nueva variable*/
+
+        var total_suma = num_1 + num_2 + num_3;
+        //var total_suma = 24 + 35 + 11 
+        //var total_suma = 70
+        console.log(total_suma);
+    
+        var total_resta = num_1 - num_2 - num_3;
+        console.log(total_resta);
+
+        //sobre escribir la variable
+        var edadAriel = 28; //creando y asignando
+        edadAriel = 29;//sobre escribiendo
+
+        var numero = 2;
+        numero = numero + 3; //numero = 2 + 3; 
+        //numero = 5;
+
+        numero += 4; //numero = 5 + 4;
+        console.log("el numero es",numero);// el numero es 9
+
+        numero -= 5;//numero = numero - 5
+        console.log("el numero es",numero);// el numero es 4
+
+        numero--;
+        console.log(numero);
+
+        /* decrementar
+        numero = numero - 1
+        numero -= 1
+        numero--
+        */
+
+        numero++;
+        console.log(numero);
+        /* incrementando
+        numero = numero + 1
+        numero += 1
+        numero++
+        */
+        const constante= 9.8;
+        
+
+    </script>
+</head>
+<body>
+    
+</body>

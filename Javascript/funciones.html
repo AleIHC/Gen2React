@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        //funciones
+        //trozo de codigo, que solo se ejecutará cuando sea llamado
+        //realiza una accion especifica.
+
+        function nombre_funcion()
+        {
+            //accion o codigo a ejecutar
+        }
+        //llamado a la funcion
+        nombre_funcion();
+
+        function ejemplo(){
+            console.log("Estoy dentro de la funcion");
+        }
+        ejemplo();//llamado a la funcion
+
+        function imprimir(cantidad){//cantidad = [1,2,3,4]
+            console.log("parametro",cantidad);
+        }
+        imprimir([1,2,3,4]);
+        //console.log(cantidad);
+
+        var numero_impar = 1;
+
+        function imprimirImpar(impar){//impar= 1
+            console.log("impar",impar);
+            console.log("numero_impar",numero_impar);
+            numero_impar = 3;//sobre escritura
+        }
+
+        imprimirImpar(numero_impar);//imprimirImpar(1)
+        console.log("nuevo numero_impar",numero_impar);
+
+        //Retorno
+        function sumaNumeros(){
+            console.log(numero_impar+4);//console.log(3+4)
+            return numero_impar+4;//return 7;
+        }
+        var numeroRetornado = sumaNumeros();//llamado a la funcion
+        //var numeroRetornado = 7;
+        console.log("numeroRetornado",numeroRetornado);
+
+        function sumaImpar(){
+            return 3+5;//return 8;
+        }
+        var impares = sumaImpar();
+        console.log("suma impares",impares)//8
+        console.clear();
+
+        function multiplacion(numero1, numero2){
+            let multi = numero1*numero2;
+            return multi;
+        }
+
+        var resultadoMultiplacion=multiplacion(34.5,76);
+        console.log("El resultado es",resultadoMultiplacion);
+        console.clear();
+
+        function crearNuevoArreglo(numero){
+            var arreglo = [];//[0,1,2]
+            for(let i=0; i <= numero;i++){
+                if(i%2==0){//es par
+                    arreglo.push(i);
+                }
+            }
+            return arreglo;
+        }
+        var numeroIngresado= parseInt(prompt("ingresa un numero",0));
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        console.log("mi arreglo",miArreglo);
+
+        3/2=1
+        1
+
+    </script>
+</body>
+</html>

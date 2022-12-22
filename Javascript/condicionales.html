@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+        //condicionales
+        /* la sentencia if
+            validar o comprobar algo para tomar alguna decision
+            **si la condicion es verdadera(true) ingresar al if
+            condicion == true
+            if(condicion){
+                //dentro del if
+            }
+        */
+        
+        var edad = parseInt(prompt("Ingresa tu edad",0));
+
+        if(edad >= 18){//true
+            console.log("Es mayor de edad");
+        }
+
+        if(edad < 18){
+            console.log("Es menor de edad");
+        }
+        console.clear();
+        //else
+        if(edad >= 18){
+            console.log("Es mayor de edad");
+        }else{
+            console.log("Es menor de edad");
+        }
+        console.log("*********************")
+        //alternativa
+        if(edad < 18){
+            console.log("Es menor de edad");
+        }else{
+            console.log("Es mayor de edad");
+        }
+
+        /*validar si numero es mayor a 10 y menor a 20*/
+        
+        var numero = parseInt(prompt("ingresa un numero",0));
+        
+        // conectores &&(y), ||(o)
+        //numero < 10; numero >10 ; numero <20: numero >20
+        //numero=10; numero = 20
+
+        // 1...............2 hubble 
+
+        if(numero>10 && numero<20)
+        {
+            console.log("el numero esta en el rango solicitado");
+        }else{
+            console.log("No esta dentro del rango...");
+        }
+        //validar si un numero es mayor o menor o igual a cero
+
+        var numeroAValidar = parseInt(prompt("ingresa un nuevo numero",0));
+    
+        if(numeroAValidar == 0){
+            console.log("El numero es igual a cero");
+        }else if(numeroAValidar > 0){
+            console.log("El numero es mayor a cero");
+        }else{
+            console.log("El numero es igual a cero");
+        }
+    </script>
+</body>
+</html>
